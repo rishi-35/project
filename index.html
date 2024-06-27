@@ -1,29 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="hero">            
-            <nav class="nav-bar">
-                <div class="logo">
-                    <img src="pictures/logo.jpg" alt="">
+    <div id="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav fixed-top">
+            <div class="container">
+                <a class="navbar-title" href="#">
+                    GlobeGlide
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" id="navItem1" href="#wcuSection">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-link" href="#exploreMenuSection" id="navItem2">About Us</a>
+                        <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Services</a>
+                        <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+                    </div>
                 </div>
-                <ul >
-                    <li class="nav-ele">Home</li>
-                    <li class="nav-ele">Destination</li>
-                    <li class="nav-ele">Pakeges</li>
-                    <li class="nav-ele">Reviews</li>
-                    <li class="nav-ele">About us</li>
-                    <li class="nav-ele">Sign up</li>
-                </ul>
-            </nav>
-            <h1 class="title">Journey Beyound Borders</h1>
+            </div>
+        </nav>
+        <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+            <div class="text-center">
+                <div class="banner-title">
+                    <h1 class="banner-heading mb-5">Let Us Take You Away</h1>
+                </div>
+                <pre class="custom-toggle">Offers    01</pre>
+                <pre class="custom-toggle">Testimonals  02</pre>
+                <pre class="custom-toggle">Latest   03</pre>
+            </div>
+            <div class="sr">
+                <div class="search-toggle-container d-flex flex-column justify-content-center">
+                    <div class="text-center srch">
+                        <h1 class="search-toggle">Search For Your Trip</h1>
+                    </div>
+                </div>
+                <div class="container bg-light">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 mt-3">
+                            <div class="search-card mb-3">
+                                <h1 class="search-toggle-component">City</h1>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2 col-xl-2 mb-3 mt-3">
+                            <div class="search-card mb-3">
+                                <h1 class="search-toggle-component">Departure</h1>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2 col-xl-2 mb-3 mt-3">
+                            <div class="search-card mb-3">
+                                <h1 class="search-toggle-component">Arrival</h1>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2 col-xl-2 mb-3 mt-3">
+                            <div class="search-card mb-3">
+                                <h1 class="search-toggle-component">Budget </h1>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 mt-3">
+                            <div class="search-bar mb-3">
+                                <h1 class="search-bar-component ">Budget </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sr1">
+            <div class="">
+                <div class="">
+                    <h1 class="search-toggle">Search For Your Trip</h1>
+                </div>
+            </div>
+            <div class="container bg-light">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1 mt-3">
+                        <div class="search-card mb-3">
+                            <h1 class="search-toggle-component">City</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 col-xl-2 mb-1 mt-3">
+                        <div class="search-card mb-3">
+                            <h1 class="search-toggle-component">Departure</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 col-xl-2 mb-1 mt-3">
+                        <div class="search-card mb-3">
+                            <h1 class="search-toggle-component">Arrival</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 col-xl-2 mb-1 mt-3">
+                        <div class="search-card mb-3">
+                            <h1 class="search-toggle-component">Budget </h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1 mt-3">
+                        <div class="search-bar mb-3">
+                            <h1 class="search-bar-component ">Search </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3 con">
+            <hr>
+            <div class="extra-intro-card d-flex flex-row col-12 col-md-6 col-lg-4">
+                <img src="https://preview.colorlib.com/theme/travello/images/beach.svg" class="extra-intro-card-image">
+                <div>
+                    <h1 class="extra-intro-heading">Top Destinations</h1>
+                    <p class="extra-intro-desc">Nulla pretium tincidunt felis, nec.</p>
+                </div>
+            </div>
+            <div class="extra-intro-card d-flex flex-row col-12 col-md-6 col-lg-4">
+                <img src="https://preview.colorlib.com/theme/travello/images/wallet.svg" class="extra-intro-card-image">
+                <div>
+                    <h1 class="extra-intro-heading">The Best Prices</h1>
+                    <p class="extra-intro-desc">Nulla pretium tincidunt felis, nec.</p>
+                </div>
+            </div>
+            <div class="extra-intro-card d-flex flex-row col-12 col-lg-4">
+                <img src="https://preview.colorlib.com/theme/travello/images/suitcase.svg" class="extra-intro-card-image">
+                <div>
+                    <h1 class="extra-intro-heading">Amazing Services</h1>
+                    <p class="extra-intro-desc">Nulla pretium tincidunt felis, nec.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popular-dest">
+        <div class="amz-card">
+            <p class="pop-dest">SIMPLY AMAZING PLACES</p>
+            <h1 class="pop-head">Popular Destinations</h1>
+        </div>
+        <div class="card-cont">
+            <div class="dest-card">
+                <img src="https://img.freepik.com/free-photo/bali-pagoda-sunrise-indonesia_1150-11013.jpg?t=st=1718987667~exp=1718991267~hmac=e900360e5037155a6fac8dceb9e920f8e466e614533c08de915afba3aae651f0&w=740" class="dest-img" />
+                <h1 class="pop-head">Bali</h1>
+                <pre class="card-desc">Nulla pretium tincidunt felis, nec.</pre>
+                <p class="card-cost">From $679</p>
+            </div>
+            <div class="dest-card">
+                <img src="https://cdn.pixabay.com/photo/2023/05/04/02/24/bali-7969001_1280.jpg" class="dest-img" />
+                <h1 class="pop-head">Indonesia</h1>
+                <pre class="card-desc">Nulla pretium tincidunt felis, nec.</pre>
+                <p class="card-cost">From $679</p>
+            </div>
+            <div class="dest-card">
+                <img src="https://preview.colorlib.com/theme/travello/images/destination_3.jpg.webp" class="dest-img" />
+                <h1 class="pop-head">San Fransisco</h1>
+                <pre class="card-desc">Nulla pretium tincidunt felis, nec.</pre>
+                <p class="card-cost">From $679</p>
+            </div>
+            <div class="dest-card">
+                <img src="https://preview.colorlib.com/theme/travello/images/destination_4.jpg.webp" class="dest-img" />
+                <h1 class="pop-head">Paris</h1>
+                <pre class="card-desc">Nulla pretium tincidunt felis, nec.</pre>
+                <p class="card-cost">From $679</p>
+            </div>
+            <div class="dest-card">
+                <img src="https://preview.colorlib.com/theme/travello/images/destination_5.jpg.webp" class="dest-img" />
+                <h1 class="pop-head">Phi Phi Island</h1>
+                <pre class="card-desc">Nulla pretium tincidunt felis, nec.</pre>
+                <p class="card-cost">From $679</p>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
