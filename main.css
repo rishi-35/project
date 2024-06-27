@@ -1,49 +1,853 @@
-*{
-    margin: 0px;
-    padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+
+
+* {
     box-sizing: border-box;
 }
-.body{
-    font-family: sans-serif;
+
+body {
+    margin: 0px;
 }
 
-/* navelements */
-.container{
-    color: white;
-    background: url('pictures/hero-bg.avif');
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media(max-width:569px) {
+
+    #navItem1 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem2 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem3 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem4 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    .banner-section-bg-container {
+        background-image: url("https://img.freepik.com/free-photo/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand_335224-1356.jpg?t=st=1719039512~exp=1719043112~hmac=a0271c8f141c6452e357e035b8f19170871b1db15177f048ec687f2678000453&w=826");
+        height: auto;
+        background-size: cover;
+    }
+
+    .banner-heading {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 60px;
+    }
+
+    .top {
+        margin: 10px;
+    }
+
+
+    .custom-toggle {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        background-color: transparent;
+        text-align: right;
+
+    }
+
+    .navbar-title {
+        color: white;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .srch {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: white;
+        width: 20vw;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .search-toggle-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .search-toggle {
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        background-color: white;
+    }
+
+    .search-card {
+        background-color: rgb(203, 202, 202);
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .search-toggle-component {
+        font-size: 15px;
+        text-align: left;
+        font-family: "Open Sans", sans-serif;
+
+    }
+
+    .search-bar {
+        background-color: black;
+        border-radius: 15px;
+        height: 45px;
+        color: white;
+    }
+
+    .search-bar-component {
+        font-size: 15px;
+        text-align: center;
+        padding: 10px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    hr {
+        border-width: 2px;
+        color: #A7A3A2;
+        width: 80vw;
+        margin: 40px;
+    }
+
+    .extra-intro-card {
+        padding: 15px;
+        margin-bottom: 10px;
+
+    }
+
+    .extra-intro-card-image {
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    .extra-intro-heading {
+        font-size: 15px;
+        font-style: bold;
+    }
+
+    .extra-intro-desc {
+        font-size: 15px;
+    }
+
+    .pop-dest {
+        color: #A7A3A2;
+        font-family: 'Oswald';
+        font-weight: normal;
+    }
+
+    .sr {
+        display: none;
+    }
+
+    .pop-head {
+        font-family: 'Oswald', Open Sans;
+        font-weight: normal;
+    }
+
+    .dest-img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .dest-card {
+        height: 450px;
+        width: 300px;
+        margin-bottom: 30px;
+        ;
+    }
+
+    .card-desc {
+        font-family: 'Open Sans';
+        color: #A7A3A2;
+    }
+
+    .card-cost {
+        font-family: 'Open Sans';
+        font-weight: bold;
+    }
+
+    .amz-card {
+        width: 240px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-dest {
+        margin: 10px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
-.nav-ele{
-    text-decoration: none;
-    margin: 1.2rem;
-    list-style: none;
+
+@media(min-width:570px) and (max-width:767px) {
+    .con {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navItem1 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem2 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem3 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem4 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    .banner-section-bg-container {
+        background-image: url("https://img.freepik.com/free-photo/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand_335224-1356.jpg?t=st=1719039512~exp=1719043112~hmac=a0271c8f141c6452e357e035b8f19170871b1db15177f048ec687f2678000453&w=826");
+        height: auto;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .banner-heading {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    .top {
+        margin: 10px;
+    }
+
+
+    .custom-toggle {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        background-color: transparent;
+        text-align: right;
+
+    }
+
+    .navbar-title {
+        color: white;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .srch {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: white;
+        width: 20vw;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .search-toggle-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .search-toggle {
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        background-color: white;
+    }
+
+    .search-card {
+        background-color: rgb(203, 202, 202);
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .search-toggle-component {
+        font-size: 15px;
+        text-align: left;
+        font-family: "Open Sans", sans-serif;
+
+    }
+
+    .search-bar {
+        background-color: black;
+        border-radius: 15px;
+        height: 45px;
+        color: white;
+    }
+
+    .search-bar-component {
+        font-size: 15px;
+        text-align: center;
+        padding: 10px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    hr {
+        border-width: 2px;
+        color: #A7A3A2;
+        width: 80vw;
+        margin: 40px;
+    }
+
+    .extra-intro-card {
+        padding: 15px;
+        margin-bottom: 10px;
+
+    }
+
+    .extra-intro-card-image {
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    .extra-intro-heading {
+        font-size: 15px;
+        font-style: bold;
+    }
+
+    .extra-intro-desc {
+        font-size: 15px;
+    }
+
+    .pop-dest {
+        color: #A7A3A2;
+        font-family: 'Oswald';
+        font-weight: normal;
+    }
+
+    .sr {
+        display: none;
+    }
+
+    .pop-head {
+        font-family: 'Oswald', Open Sans;
+        font-weight: normal;
+    }
+
+    .dest-img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .dest-card {
+        height: 570px;
+        width: 400px;
+        margin-bottom: 30px;
+    }
+
+    .card-desc {
+        font-family: 'Open Sans';
+        color: #A7A3A2;
+    }
+
+    .card-cost {
+        font-family: 'Open Sans';
+        font-weight: bold;
+    }
+
+    .amz-card {
+        width: 240px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-dest {
+        margin: 10px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
-.nav-bar{
-    display: flex;
+
+@media(min-width:768px) and (max-width:993px) {
+    .bg-nav {
+        background-color: #8AB0B0;
+    }
+
+    #navItem1 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem2 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem3 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem4 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    .banner-section-bg-container {
+        background-image: url("https://img.freepik.com/free-photo/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand_335224-1356.jpg?t=st=1719039512~exp=1719043112~hmac=a0271c8f141c6452e357e035b8f19170871b1db15177f048ec687f2678000453&w=826");
+        height: auto;
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        margin-bottom: 20px;
+        ;
+    }
+
+    .con {
+        display: flex;
+        flex-direction: row;
+        max-width: 990px;
+        min-width: 766px;
+        flex-wrap: wrap;
+    }
+
+    .banner-heading {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    .top {
+        margin: 10px;
+    }
+
+
+    .custom-toggle {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        background-color: transparent;
+        text-align: right;
+
+    }
+
+    .navbar-title {
+        color: white;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .srch {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: white;
+        width: 20vw;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .search-toggle-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .search-toggle {
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        background-color: white;
+    }
+
+    .search-card {
+        background-color: rgb(203, 202, 202);
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .search-toggle-component {
+        font-size: 15px;
+        text-align: left;
+        font-family: "Open Sans", sans-serif;
+
+    }
+
+    .search-bar {
+        background-color: black;
+        border-radius: 15px;
+        height: 45px;
+        color: white;
+    }
+
+    .search-bar-component {
+        font-size: 15px;
+        text-align: center;
+        padding: 10px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    hr {
+        border-width: 2px;
+        color: #A7A3A2;
+        width: 80vw;
+        margin: 40px;
+    }
+
+    .extra-intro-card {
+        padding: 15px;
+        margin-bottom: 10px;
+        width: 300px;
+    }
+
+    .extra-intro-card-image {
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    .extra-intro-heading {
+        font-size: 15px;
+        font-style: bold;
+    }
+
+    .extra-intro-desc {
+        font-size: 15px;
+    }
+
+    .pop-dest {
+        color: #A7A3A2;
+        font-family: 'Oswald';
+        font-weight: normal;
+    }
+
+    .sr {
+        display: none;
+    }
+
+    .pop-head {
+        font-family: 'Oswald', Open Sans;
+        font-weight: normal;
+    }
+
+    .dest-img {
+        height: 400px;
+        width: 500px;
+    }
+
+    .dest-card {
+        height: 600px;
+        width: 500px;
+        margin-bottom: 30px;
+    }
+
+    .card-desc {
+        font-family: 'Open Sans';
+        color: #A7A3A2;
+    }
+
+    .card-cost {
+        font-family: 'Open Sans';
+        font-weight: bold;
+    }
+
+    .amz-card {
+        width: 240px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-dest {
+        margin: 10px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-cont {
+        min-width: 768px;
+        max-width: 990px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
-.hero{
-    display: flex;
-    flex-direction: column;
-    
-}
-.tittle{
-    
-}
-.logo>img{
-    height: 24px;
-}
-.nav-bar>ul{
-    display: flex;
-    flex-direction: row;
-    
-}
-.hero{
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.338);
-    
-    
+
+@media(min-width:994px) {
+    .bg-nav {
+        background-color: #8AB0B0;
+    }
+
+    .con {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #navItem1 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem2 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem3 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    #navItem4 {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    .banner-heading {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    .top {
+        margin: 10px;
+    }
+
+
+    .custom-toggle {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        background-color: transparent;
+        text-align: right;
+    }
+
+    .navbar-title {
+        color: white;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .srch {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: white;
+        width: 20vw;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .search-toggle-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .search-toggle {
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        background-color: white;
+    }
+
+    .search-card {
+        background-color: rgb(203, 202, 202);
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .search-toggle-component {
+        font-size: 15px;
+        text-align: left;
+        font-family: "Open Sans", sans-serif;
+
+    }
+
+    .search-bar {
+        background-color: black;
+        border-radius: 15px;
+        height: 45px;
+        color: white;
+    }
+
+    .search-bar-component {
+        font-size: 15px;
+        text-align: center;
+        padding: 10px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    hr {
+        border-width: 2px;
+        color: #A7A3A2;
+        width: 80vw;
+        margin: 40px;
+    }
+
+    .extra-intro-card {
+        padding: 15px;
+        margin-bottom: 10px;
+
+    }
+
+    .extra-intro-card-image {
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    .extra-intro-heading {
+        font-size: 15px;
+        font-style: bold;
+    }
+
+    .extra-intro-desc {
+        font-size: 15px;
+    }
+
+    .pop-dest {
+        color: #A7A3A2;
+        font-family: 'Oswald';
+        font-weight: normal;
+    }
+
+    .pop-head {
+        font-family: 'Oswald', Open Sans;
+        font-weight: normal;
+    }
+
+    .dest-img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .dest-card {
+        height: 500px;
+        width: 320px;
+        transition: all 2.3s;
+        margin-right: 10px;
+    }
+
+    .dest-card :hover {
+        transform: scale(1.1);
+    }
+
+    .card-desc {
+        font-family: 'Open Sans';
+        color: #A7A3A2;
+    }
+
+    .sr1 {
+        display: none;
+    }
+
+    .banner-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .card-cost {
+        font-family: 'Open Sans';
+        font-weight: bold;
+    }
+
+    .amz-card {
+        width: 240px;
+        height: 160px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-dest {
+        margin: 10px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .card-cont {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-heading {
+        color: #e8ecef;
+        font-family: "Open Sans", sans-serif;
+        font-size: 50px;
+        margin-top: 120px;
+        font-weight: 300;
+    }
+
+    .banner-section-bg-container {
+        background-image: url("https://img.freepik.com/free-photo/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand_335224-1356.jpg?t=st=1719039512~exp=1719043112~hmac=a0271c8f141c6452e357e035b8f19170871b1db15177f048ec687f2678000453&w=826");
+        height: auto;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        margin-bottom: 20px;
+        ;
+    }
 }
