@@ -14,6 +14,26 @@
 body {
     margin: 0px;
 }
+.dest-btn{
+    background-color: #8AB0B0 ;
+    /* color: white; */
+    width: 20vw;
+    margin: auto;
+    padding: 1.2%;
+    border-radius: 20px;
+    margin-bottom: 3%;
+}
+.dest-btn>a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+.dest-btn:hover{
+    color: white;
+    text-decoration: none;
+}
+
 
 @media(max-width:569px) {
 
